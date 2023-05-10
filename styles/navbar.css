@@ -1,0 +1,93 @@
+#navbar {
+  width: 100%;
+  height: var(--navbar-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 var(--side-padding);
+  gap: var(--gap-1);
+}
+
+/* finish navbar stick when the scroll y is bigger than 100px, add a separte js file for this */
+#navbar.sticky {
+  background-color: black;
+}
+
+#nav-logo {
+  display: flex;
+}
+
+#nav-logo svg {
+  width: 50px;
+  height: auto;
+}
+
+#nav-logo polygon {
+  stroke: var(--acc-clr-1);
+  stroke-width: 10;
+  fill: none;
+  transition: stroke-dasharray 0.9s, stroke-dashoffset 0.9s;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+
+#nav-logo svg:hover polygon {
+  stroke-dashoffset: 1000;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-1);
+}
+
+#navbar ul li a {
+  padding: 10px;
+  color: var(--text-clr-1);
+  font-size: var(--fz-1);
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  transition: color var(--transition-1);
+}
+
+#navbar ul li a span:first-of-type {
+  color: var(--acc-clr-1);
+}
+
+#navbar ul li a:hover {
+  color: var(--acc-clr-1);
+}
+
+#navbar ul li button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 40px;
+  gap: var(--gap-1);
+}
+#navbar ul li:last-of-type {
+  display: none;
+}
+#navbar ul li button span {
+  height: 2px;
+  background-color: var(--acc-clr-1);
+}
+#navbar ul li button span:nth-of-type(1) {
+  width: 100%;
+}
+#navbar ul li button span:nth-of-type(2) {
+  width: 70%;
+}
+#navbar ul li button span:nth-of-type(3) {
+  width: 40%;
+}
+
+@media (max-width: 700px) {
+  #navbar ul li {
+    display: none;
+  }
+  #navbar ul li:last-of-type {
+    display: block;
+  }
+}

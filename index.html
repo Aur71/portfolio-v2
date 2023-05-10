@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/page-wrapper.css" />
+    <link rel="stylesheet" href="./styles/hero.css" />
+    <link rel="stylesheet" href="./styles/about-me.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <!-- scripts -->
+    <script src="./javascript/main.js" defer></script>
+    <script src="./javascript/navbar.js" defer></script>
+  </head>
+  <body>
+    <nav id="navbar">
+      <!-- nav logo -->
+      <a href="/" id="nav-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+          <polygon
+            points="100,10 161,30 190,77 190,123 161,170 100,190 39,170 10,123 10,77 39,30"
+          />
+          <text
+            x="100"
+            y="110"
+            fill="var(--acc-clr-1)"
+            font-size="130"
+            text-anchor="middle"
+            dominant-baseline="middle"
+          >
+            A
+          </text>
+        </svg>
+      </a>
+      <!-- nav links -->
+      <ul>
+        <li>
+          <a href="#">
+            <span>01.</span>
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>02.</span>
+            <span>Work</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>03.</span>
+            <span>Contact</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>04.</span>
+            <span>Resume</span>
+          </a>
+        </li>
+        <!-- open nav btn -->
+        <li>
+          <button>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <aside id="sidebar">sidebar</aside>
+
+    <div id="page-wrapper">
+      <div id="icons-container">icons</div>
+
+      <main>
+        <header id="hero">hero</header>
+        <section id="about-me">about me</section>
+        <section id="projects">projects</section>
+        <section id="contact">contact</section>
+        <footer id="footer">footer</footer>
+      </main>
+
+      <div id="email-container">email</div>
+    </div>
+  </body>
+</html>

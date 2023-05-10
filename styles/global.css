@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  /* fonts */
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Roboto Mono', monospace;
+  /* heights */
+  --navbar-height: 100px;
+  /* colors */
+  --main-clr: #0a192f;
+  --acc-clr-1: #64ffda;
+  --text-clr-1: #ccd6f6;
+  /* font sizes */
+  --fz-1: 13px;
+  /* gaps */
+  --gap-1: 10px;
+  /* padding */
+  --side-padding: 20px;
+  /* transitions */
+  --transition-1: ease-out 300ms;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+body {
+  background-color: var(--main-clr);
+  color: var(--text-clr-1);
+  line-height: 1.3;
+  overflow-x: hidden;
+}
+
+button {
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
