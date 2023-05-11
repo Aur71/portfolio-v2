@@ -1,13 +1,18 @@
 #navbar {
   width: 100%;
   height: var(--navbar-height);
+  padding: 0 var(--side-padding);
+  transition: var(--navbar-transition);
+  z-index: var(--navbar-z-index);
+}
+
+#navbar > div {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 var(--side-padding);
   gap: var(--gap-1);
-  transition: var(--navbar-transition);
-  z-index: var(--navbar-z-index);
 }
 
 @keyframes slideDown {
@@ -33,9 +38,12 @@
 }
 
 #navbar.sticky {
-  height: var(--navbar-height-active);
-  position: fixed;
+  position: sticky;
   top: 0;
+}
+
+#navbar.sticky > div {
+  height: var(--navbar-height-active);
   background-color: var(--navbar-bk-clr-active);
   animation: slideDown 0.3s;
   box-shadow: var(--navbar-box-shadow);
@@ -73,9 +81,12 @@
   padding: 10px;
   color: var(--text-clr-1);
   font-size: var(--fz-1);
-  font-family: var(--secondary-font);
   font-weight: 500;
   transition: color var(--transition-1);
+}
+
+#navbar ul li a span {
+  font-family: var(--secondary-font);
 }
 
 #navbar ul li a span:first-of-type {

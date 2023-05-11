@@ -12,12 +12,15 @@
     <link rel="stylesheet" href="./styles/sidebar.css" />
     <link rel="stylesheet" href="./styles/page-wrapper.css" />
     <link rel="stylesheet" href="./styles/hero.css" />
-    <link rel="stylesheet" href="./styles/about-me.css" />
-    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/work.css" />
     <link rel="stylesheet" href="./styles/contact.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <!-- scripts -->
-    <script src="./javascript/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/362dab4285.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./javascript/navbar.js" defer></script>
     <script src="./javascript/sidebar.js" defer></script>
   </head>
@@ -25,74 +28,120 @@
     <div id="page-overlay"></div>
 
     <nav id="navbar">
-      <!-- nav logo -->
-      <a href="/" id="nav-logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-          <polygon
-            points="100,10 161,30 190,77 190,123 161,170 100,190 39,170 10,123 10,77 39,30"
-          />
-          <text
-            x="100"
-            y="110"
-            fill="var(--acc-clr-1)"
-            font-size="130"
-            text-anchor="middle"
-            dominant-baseline="middle"
-          >
-            A
-          </text>
-        </svg>
-      </a>
-      <!-- nav links -->
-      <ul>
-        <li>
-          <a href="#">
-            <span>01.</span>
-            <span>About</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span>02.</span>
-            <span>Work</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span>03.</span>
-            <span>Contact</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span>04.</span>
-            <span>Resume</span>
-          </a>
-        </li>
-        <!-- open nav btn -->
-        <li>
-          <button id="open-sidebar-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </li>
-      </ul>
+      <div>
+        <!-- nav logo -->
+        <a href="/" id="nav-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+            <polygon
+              points="100,10 161,30 190,77 190,123 161,170 100,190 39,170 10,123 10,77 39,30"
+            />
+            <text
+              x="100"
+              y="110"
+              fill="var(--acc-clr-1)"
+              font-size="130"
+              text-anchor="middle"
+              dominant-baseline="middle"
+            >
+              A
+            </text>
+          </svg>
+        </a>
+        <!-- nav links -->
+        <ul>
+          <li>
+            <a href="#about">
+              <span>01.</span>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#work">
+              <span>02.</span>
+              <span>Work</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <span>03.</span>
+              <span>Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>04.</span>
+              <span>Resume</span>
+            </a>
+          </li>
+          <!-- open nav btn -->
+          <li>
+            <button id="open-sidebar-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <aside id="sidebar">sidebar</aside>
+
+    <aside id="sidebar">
+      <button id="close-sidebar-btn">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="sidebar-navigation">
+        <a href="#about">
+          <span>01.</span>
+          <span>About</span>
+        </a>
+        <a href="#work">
+          <span>02.</span>
+          <span>Work</span>
+        </a>
+        <a href="#contact">
+          <span>03.</span>
+          <span>Contact</span>
+        </a>
+        <a href="/">
+          <span>04.</span>
+          <span>Resume</span>
+        </a>
+      </nav>
+    </aside>
 
     <div id="page-wrapper">
-      <div id="icons-container">icons</div>
+      <div id="icons-container">
+        <a
+          href="https://www.linkedin.com/in/aurel-tumurug-91344321a/"
+          class="side-social-icon"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a
+          href="https://github.com/Aur71"
+          class="side-social-icon"
+          target="_blank"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <div class="side-line"></div>
+      </div>
 
       <main>
         <header id="hero">hero</header>
-        <section id="about-me">about me</section>
-        <section id="projects">projects</section>
+        <section id="about">about me</section>
+        <section id="work">projects</section>
         <section id="contact">contact</section>
         <footer id="footer">footer</footer>
       </main>
 
-      <div id="email-container">email</div>
+      <div id="email-container">
+        <a href="mailto:tumuruga17@gmail.com" class="side-email">tumuruga17@</a>
+        <div class="side-line"></div>
+      </div>
     </div>
   </body>
 </html>
