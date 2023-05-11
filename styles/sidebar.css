@@ -2,4 +2,19 @@
   position: fixed;
   top: 0;
   right: 0;
+  max-width: var(--sidebar-width);
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: var(--sidebar-z-index);
+  background-color: var(--secondary-clr);
+  transition: var(--sidebar-transition);
+  opacity: 0;
+  transform: translate(100%);
+}
+
+#sidebar.active {
+  opacity: 1;
+  transform: translate(0%);
 }

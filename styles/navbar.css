@@ -6,11 +6,39 @@
   align-items: center;
   padding: 0 var(--side-padding);
   gap: var(--gap-1);
+  transition: var(--navbar-transition);
+  z-index: var(--navbar-z-index);
 }
 
-/* finish navbar stick when the scroll y is bigger than 100px, add a separte js file for this */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+#navbar.slide_up {
+  animation: slideUp 0.3s;
+}
+
 #navbar.sticky {
-  background-color: black;
+  height: var(--navbar-height-active);
+  position: fixed;
+  top: 0;
+  background-color: var(--navbar-bk-clr-active);
+  animation: slideDown 0.3s;
+  box-shadow: var(--navbar-box-shadow);
 }
 
 #nav-logo {

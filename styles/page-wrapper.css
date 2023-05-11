@@ -12,16 +12,21 @@ main {
 }
 
 #icons-container {
+  position: sticky;
+  top: var(--navbar-height);
+  height: calc(100vh - var(--navbar-height));
   padding: 0 var(--side-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  height: calc(100vh - var(--navbar-height));
   border: 1px solid blueviolet;
 }
 
 #email-container {
+  position: sticky;
+  top: var(--navbar-height);
+  height: calc(100vh - var(--navbar-height));
   padding: 0 var(--side-padding);
   display: flex;
   flex-direction: column;
