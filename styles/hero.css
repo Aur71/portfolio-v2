@@ -1,4 +1,70 @@
 #hero {
   min-height: calc(100vh - var(--navbar-height));
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+  color: var(--acc-clr-1);
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#hero > h1 {
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 600;
+  color: var(--clr-1);
+}
+
+#hero > h3 {
+  color: var(--clr-4);
+  line-height: 0.9;
+  font-size: clamp(40px, 6vw, 70px);
+  margin-top: 10px;
+}
+
+#hero > p {
+  color: var(--clr-4);
+  margin-top: 20px;
+  max-width: 540px;
+  line-height: 1.7;
+}
+
+#hero > a {
+  color: var(--acc-clr-1);
+  background-color: transparent;
+  border: 1px solid var(--acc-clr-1);
+  border-radius: var(--border-radius);
+  padding: 1.25rem 1.75rem;
+  font-size: var(--fz-3);
+  font-family: var(--secondary-font);
+  line-height: 1;
+  transition: var(--transition-1);
+  margin-top: 50px;
+  width: max-content;
+}
+
+#hero > a:hover {
+  color: var(--main-clr);
+  background-color: var(--acc-clr-1);
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  #hero {
+    padding: 0 var(--section-side-padding);
+  }
+}
+
+@media (max-width: 750px) {
+  #hero > h2 {
+    margin-bottom: 10px;
+  }
+
+  #hero > a {
+    margin-top: 25px;
+  }
 }
