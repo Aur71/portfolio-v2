@@ -1,6 +1,11 @@
 #work {
   padding: var(--section-top-bottom-padding) 0;
-  border: 1px solid green;
+}
+
+#work > .projects {
+  width: 100%;
+  height: 500px;
+  border: 1px solid red;
 }
 
 @media (max-width: 1200px) {

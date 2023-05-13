@@ -3,6 +3,7 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: var(--gap-2);
+  margin-bottom: 40px;
 }
 
 .section-header h2 {
