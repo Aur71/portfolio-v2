@@ -1,3 +1,9 @@
 #footer {
   border: 1px solid paleturquoise;
 }
+
+@media (max-width: 1200px) {
+  #footer {
+    padding: 0 var(--section-side-padding);
+  }
+}

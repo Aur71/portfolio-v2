@@ -1,3 +1,10 @@
 #contact {
+  padding: var(--section-top-bottom-padding) 0;
   border: 1px solid blue;
+}
+
+@media (max-width: 1200px) {
+  #contact {
+    padding: var(--section-top-bottom-padding) var(--section-side-padding);
+  }
 }

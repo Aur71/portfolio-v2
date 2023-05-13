@@ -28,12 +28,14 @@
   --clr-2: #a8b2d1;
   --clr-3: #495670;
   --clr-4: #8892b0;
+  --clr-5: #233554;
   /* font sizes */
   --fz-1: 13px;
   --fz-2: 12px;
   --fz-3: 14px;
   /* gaps */
   --gap-1: 10px;
+  --gap-2: 20px;
   /* padding */
   --side-padding: 20px;
   --section-side-padding: 20px;
@@ -41,7 +43,6 @@
   /* transitions */
   --transition-1: ease-out 300ms;
   --transition-2: linear 150ms;
-  --transition-3: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   /* border radius */
   --border-radius: 4px;
 }
@@ -101,4 +102,12 @@ a {
 
 ::-webkit-scrollbar-track {
   background: var(--main-clr);
+}
+
+@media (max-width: 400px) {
+  :root {
+    --section-side-padding: 10px;
+    --section-top-bottom-padding: 80px;
+    --gap-2: 5px;
+  }
 }

@@ -1,0 +1,33 @@
+.section-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: var(--gap-2);
+}
+
+.section-header h2 {
+  white-space: nowrap;
+}
+
+.section-header h2 span:first-of-type {
+  color: var(--acc-clr-1);
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: clamp(16px, 3vw, 20px);
+}
+
+.section-header h2 span:last-of-type {
+  font-family: var(--main-font);
+  font-size: clamp(20px, 4vw, 26px);
+  font-weight: 600;
+  color: var(--clr-1);
+}
+
+.section-header .section-line {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  top: 2.5px;
+  height: 1px;
+  background-color: var(--clr-5);
+}
