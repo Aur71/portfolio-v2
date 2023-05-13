@@ -1,9 +1,42 @@
 #footer {
-  border: 1px solid paleturquoise;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#footer > .footer-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  display: none;
+}
+
+#footer > .footer-icons a {
+  display: flex;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+#footer > p {
+  font-family: var(--secondary-font);
+  color: var(--clr-2);
+  font-size: var(--fz-5);
 }
 
 @media (max-width: 1200px) {
   #footer {
     padding: 0 var(--section-side-padding);
+  }
+}
+
+@media (max-width: 750px) {
+  #footer > .footer-icons {
+    display: flex;
   }
 }
