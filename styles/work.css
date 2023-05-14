@@ -4,8 +4,45 @@
 
 #work > .projects {
   width: 100%;
-  height: 500px;
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+#work > .projects .project {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#work > .projects .project .img-container {
+  position: absolute;
+  aspect-ratio: 550 / 360;
+  width: 100%;
+  max-width: 550px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  background-color: green;
+}
+
+#work > .projects .project .info-container {
+  width: 100%;
+  max-width: 500px;
+  height: 330px;
+  margin-left: auto;
+  z-index: 2;
+  background-color: yellow;
+}
+
+/* even project styling */
+#work > .projects .project:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+#work > .projects .project:nth-of-type(even) .info-container {
+  margin-left: 0;
+  margin-right: auto;
 }
 
 @media (max-width: 1200px) {
