@@ -29,12 +29,14 @@
   --clr-3: #495670;
   --clr-4: #8892b0;
   --clr-5: #233554;
+  --clr-6: white;
   /* font sizes */
   --fz-1: 13px;
   --fz-2: 12px;
   --fz-3: 14px;
   --fz-5: 12px;
   --fz-6: 17px;
+  --fz-7: 18px;
   /* gaps */
   --gap-1: 10px;
   --gap-2: 20px;
