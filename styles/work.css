@@ -85,6 +85,10 @@
   margin-top: 20px;
 }
 
+#work > .projects .project .info-container p span {
+  color: var(--clr-6);
+}
+
 #work > .projects .project .info-container .technologies-used-container {
   display: flex;
   align-items: center;
