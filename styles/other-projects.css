@@ -1,0 +1,83 @@
+#other-projects {
+  padding: var(--section-top-bottom-padding) 0;
+}
+
+#other-projects > .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+#other-projects > .grid-container > .project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-clr);
+  box-shadow: var(--box-shadow-1);
+  transition: transform var(--transition-1);
+  padding: 20px;
+}
+
+#other-projects > .grid-container > .project:hover {
+  transform: translateY(-5px);
+}
+
+#other-projects > .grid-container > .project:hover > h3 {
+  color: var(--acc-clr-1);
+}
+
+#other-projects > .grid-container > .project .header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+#other-projects > .grid-container > .project .header .folder-icon {
+  display: inline;
+  width: 40px;
+  height: auto;
+  color: var(--acc-clr-1);
+  margin-right: auto;
+}
+
+#other-projects > .grid-container > .project .header > a {
+  display: flex;
+  transition: color var(--transition-2);
+}
+#other-projects > .grid-container > .project .header > a:hover {
+  color: var(--acc-clr-1);
+}
+
+#other-projects > .grid-container > .project .header > a .icon {
+  width: 20px;
+  height: auto;
+}
+
+#other-projects > .grid-container > .project h3 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  transition: color var(--transition-2);
+}
+
+#other-projects > .grid-container > .project p {
+  color: var(--clr-2);
+  font-size: var(--fz-3);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+#other-projects > .grid-container > .project ul {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: var(--secondary-font);
+  font-size: var(--fz-2);
+  color: var(--clr-4);
+  font-weight: 500;
+}
